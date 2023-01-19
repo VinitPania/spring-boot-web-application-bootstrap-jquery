@@ -14,7 +14,3 @@ phases:
     commands:
     - echo Build complete on1 `date`
     - mvn package
-artifacts:
-  files:
-    - target/spring-boot-web-application-bootstrap-jquery.jar
-  discard-paths: yes
