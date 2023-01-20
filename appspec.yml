@@ -6,15 +6,15 @@ files:
     destination: /home/ec2-user
 hooks:
  AfterInstall:
-    - location: fix_previleges.sh
+    - location: scripts/fix_previleges.sh
       timeout: 300
       runas: root
   ApplicationStop:
-    - location: server_stop.sh
+    - location: scripts/server_stop.sh
       timeout: 300
       runas: root
   ApplicationStart:
-    - location: server_start.sh
+    - location: scripts/server_start.sh
       timeout: 20
       runas: root
   
