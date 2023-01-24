@@ -60,7 +60,7 @@ public class WelcomeController {
 		String messages = msg;
 		if (messages == "")
 		{
-			messages = "Asif";
+			messages = "Asif Qureshi";
 		}
 		request.getSession().setAttribute("MY_SESSION_MESSAGES", messages);
 		return "redirect:/";
